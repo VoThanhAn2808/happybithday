@@ -1275,3 +1275,88 @@ span::before{
     }
 }
 /* ------hết hiệu ứng di chuyển chuột----- */
+
+@media (max-width: 768px) {
+    .container .boxcontainer {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container .image > img {
+        width: 90%;
+    }
+
+    .container .text-happybirthday img {
+        width: 150px;
+    }
+
+    .container .cake img {
+        width: 200px;
+        height: auto;
+    }
+
+    .container .cloud > img {
+        width: 70px;
+    }
+
+    .box-balloon .balloon-item1 img {
+        width: 60px;
+    }
+
+    .container .cute1 img,
+    .container .cute2 img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .boxMail .boxMail-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .boxMail .boxMail-container .card1,
+    .boxMail .boxMail-container .card2 {
+        width: 100%;
+        height: 50%;
+        transform: none !important;
+        position: relative;
+    }
+
+    .boxMail .boxMail-container:hover .card1 {
+        transform: none;
+    }
+
+    .boxMail .boxMail-container:hover .card2-content {
+        transform: none;
+    }
+
+    .boxMail .boxMail-container .card1 h3 {
+        font-size: 28px;
+    }
+
+    .boxMail .boxMail-container .card2 h2 {
+        font-size: 14px;
+    }
+
+    .container .mail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container .mail .fa-envelope {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .container .mail .fa-envelope::after {
+        width: 40px;
+        height: 30px;
+    }
+
+    .container .cloud::before {
+        font-size: 8px;
+        width: auto;
+    }
+}
