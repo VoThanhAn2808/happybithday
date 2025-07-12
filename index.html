@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Happy birthday Ebe Meme</title>
+  </head>
+  <body>
+    <audio id="birthdayAudio" autoplay muted loop>
+      <source src="birthday.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="container">
+      <div class="boxcontainer">
+        <div class="image">
+          <img src="flag.png" alt="" />
+        </div>
+        <div class="text-happybirthday">
+          <img src="texthappy.png" alt="" />
+        </div>
+        <div class="cake">
+          <img src="cake.png" alt="" />
+        </div>
+        <div class="box-balloon">
+          <div class="balloon-item1">
+            <img src="balloon.png" alt="" />
+          </div>
+          <div class="balloon-item1">
+            <img src="balloon.png" alt="" />
+          </div>
+        </div>
+        <div class="box-cloud">
+          <div class="cloud">
+            <img src="cloud.png" alt="" />
+          </div>
+          <div class="cloud">
+            <img src="cloud.png" alt="" />
+          </div>
+        </div>
+        <div class="box-firework">
+          <div class="firework">
+            <img src="firework.png" alt="" />
+            <img src="firework1.png" alt="" id="firework1" />
+          </div>
+          <div class="firework">
+            <img src="firework.png" alt="" />
+            <img src="firework1.png" alt="" id="firework1" />
+          </div>
+        </div>
+        <div class="paperCannons">
+          <img src="paperCannons1.png" alt="" />
+        </div>
+        <div class="box-giftbox">
+          <img src="giftbox.png" alt="" />
+          <img src="giftbox.png" alt="" />
+          <img src="giftbox.png" alt="" />
+          <img src="giftbox.png" alt="" />
+          <img src="giftbox.png" alt="" />
+          <img src="giftbox.png" alt="" />
+        </div>
+        <div class="mail">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div class="boxcute">
+          <div class="cute1">
+            <img src="cute.png" alt="" />
+          </div>
+          <div class="cute2">
+            <img src="cute.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="boxMail">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="boxMail-container">
+          <div class="card1">
+            <div class="userImg">
+              <img src="Picture3.jpg" alt="" />
+            </div>
+            <h3>Happy birthday Ebe MeMe</h3>
+            <div class="imageCute">
+              <img src="cute1.png" alt="" />
+            </div>
+          </div>
+          <div class="card2">
+            <div class="card2-content">
+              <h3>Gửi Ebe Meme!</h3>
+              <h2>
+                Chúc mừng sinh nhật em – Ebe Meme của anh 🎂 Hôm nay là ngày đặc
+                biệt của một người đặc biệt – là ngày em chào đời để sau này…
+                làm phiền anh mỗi ngày :)) Nhưng mà không sao, anh thích bị làm
+                phiền kiểu này 😏 Chúc em sinh nhật vui vẻ, một tuổi mới thật
+                nhiều niềm vui, sức khỏe, bình an. Mong em luôn xinh đẹp (như
+                bây giờ là được rồi, đừng đẹp hơn nữa kẻo anh phải ghen 🤨), học
+                hành tốt, ăn ngon, ngủ ngon và lúc nào cũng có anh trong tim 😌
+                Anh không giỏi nói mấy lời ngọt ngào, cũng chẳng có món quà gì
+                to tát – nhưng anh ở đây, vẫn luôn muốn em hạnh phúc, mỗi ngày.
+                Cảm ơn vì em đã xuất hiện và ở bên anh đến bây giờ ❤️ Một lần
+                nữa, happy birthday Ebe Meme! 🎉 Thương em nhiều, VTA
+              </h2>
+              <div class="imageCute2">
+                <img src="cute2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("mousemove", function (e) {
+      let body = document.querySelector("body");
+      let heart = document.createElement("span");
+      let x = e.offsetX;
+      let y = e.offsetY;
+      heart.style.left = x + "px";
+      heart.style.top = y + "px";
+
+      let size = Math.random() * 10;
+      heart.style.width = 4 * size + "px";
+      heart.style.height = 4 * size + "px";
+
+      let transformValue = Math.random() * 360;
+      heart.style.transform = "rotate(" + transformValue + "deg)";
+
+      body.appendChild(heart);
+
+      setTimeout(function () {
+        heart.remove();
+      }, 1000);
+    });
+
+    let mailBox = document.querySelector(".mail");
+    let boxmail = document.querySelector(".boxMail");
+    var close = document.querySelector(".fa-xmark");
+    mailBox.onclick = function () {
+      mailBox.classList.toggle("active");
+      boxmail.classList.add("active");
+    };
+
+    close.addEventListener("click", function () {
+      boxmail.classList.remove("active");
+    });
+  </script>
+  <script>
+    mailBox.onclick = function () {
+  mailBox.classList.toggle("active");
+  boxmail.classList.add("active");
+
+  // Bật nhạc sau khi người dùng chạm vào thư
+  const audio = document.getElementById("birthdayAudio");
+  audio.muted = false;
+  audio.play().catch((e) => {
+    console.log("Không thể phát nhạc:", e);
+  });
+};
+  </script>
+</html>
